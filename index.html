@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Gene Paragas Portfolio</title>
+    <title>Gene Paragas | Portfolio</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,13 +18,12 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<script src="js/Chart.js"></script>
+    <script src="js/Chart.js"></script>
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -71,7 +70,12 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Hello my name is Gene</h1>
+                <font style="font-size:40px;"><div id="typed-strings">
+    <p>Oh <em>Hello</em> there</p>
+    <p>Welcome to my <font style="text-decoration:underline">Portfolio</font> :)</p>
+    <p>My name is <font style="font-size:60px; font-weight:bold">Gene</font></p>
+</div>
+<span id="typed"></span></font>
                 <hr>
                 <p>I'm a creative web developer, making the web more enjoyable by creating attractive websites for business and individuals who need an effective online presence,<br>for more info kindly click below</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Download my Resume</a>
@@ -135,7 +139,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading"><br>Skills</h2>
+                    <h2 class="section-heading"><br>My Skills</h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -572,12 +576,12 @@
                             <p>Email marketing is directly sending a commercial message, typically to a group of people, using email. In its broadest sense, every email sent to a potential or current customer could be considered email marketing. It usually involves using email to send ads, request business, or solicit sales or donations, and is meant to build loyalty, trust, or brand awareness. Email marketing can be done to either sold lists or a current customer database. Broadly, the term is usually used to refer to sending email messages with the purpose of enhancing the relationship of a merchant with its current or previous customers, to encourage customer loyalty and repeat business, acquiring new customers or convincing current customers to purchase something immediately, and adding advertisements to email messages sent by other companies to their customers.</p>
                             <div class="col-lg-12 text-center" style=" padding-bottom:30px; padding-top:30px">
                 
-                <div class="col-lg-4 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <img src="img/HTML5.png" width="100" height="100" class="sr-icons" alt="">
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <img src="img/CSS.png" width="100" height="100" class="sr-icons" alt="">
                     </div>
@@ -661,8 +665,31 @@
         </div>
     </div>
     <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/typed.js" type="text/javascript"></script>
+<script>
+    $(function(){
+        $("#typed").typed({
+            stringsElement: $('#typed-strings'),
+			typeSpeed: 30,
+            backDelay: 500,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+   $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
 
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+</script>
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
