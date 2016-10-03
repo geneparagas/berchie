@@ -48,14 +48,14 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services & Skills</a>
+                <li>
+                        <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -73,7 +73,7 @@
                 <font style="font-size:40px;"><div id="typed-strings">
     <p>Oh <em>Hello</em> there</p>
     <p>Welcome to my <font style="text-decoration:underline">Portfolio</font> :)</p>
-    <p>My name is <font style="font-size:60px; font-weight:bold">Gene</font></p>
+    <p>My name is <font style="font-size:50px; font-weight:bold">Gene</font></p>
 </div>
 <span id="typed"></span></font>
                 <hr>
@@ -82,27 +82,9 @@
             </div>
         </div>
     </header>
-
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">About me</h2>
-                    <hr class="light">
-                    <p class="sr-icons"><img src="https://geneparagas.github.io/img/IMG_6398.png" width="160" height="153"></p>
-                  <p class="text-faded">Gene is a full time Web Developer and have been working in the industry for more than 2 years. I got my first job as a Developer and IT Specialist for a trade event’s organizer way back from January of 2014. My assignments most of the time is to create Microsites for events/conferences. Informative websites and online registration pages, I was also tasked in the development of email marketing materials. Aside from being a developer I was also part in technical support, basic troubleshooting and Network-Server Administration. Now as a Web Developer for an outsource company. Essentially, I develop and manage web content material for clients in United States, UK</p>
-                
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-
     <section id="services">
         <div class="container">
             <div class="row">
-
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading"><br>At Your Service</h2>
                     <hr class="primary">
@@ -137,147 +119,8 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading"><br>My Skills</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-md-6 text-center">
-                    <div class="service-box">
-                        <canvas id="javascript" height="130" width="130"></canvas>
-					<br>
-					<h3 class="sr-icons">HTML 5</h3>
-					<br>
-					<script>
-						var doughnutData = [
-								{
-									value: 90,
-									color:"#f85c37"
-								},
-								{
-									value : 10,
-									color : "#ecf0f1"
-								}
-							];
-							
-							var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
-					</script>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 text-center">
-                    <div class="service-box">
-                        <canvas id="bootstrap" height="130" width="130"></canvas>
-					<br>
-					<h3 class="sr-icons">CSS 3</h3>
-					<br>
-					<script>
-						var doughnutData = [
-								{
-									value: 90,
-									color:"#f85c37"
-								},
-								{
-									value : 10,
-									color : "#ecf0f1"
-								}
-							];
-							var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
-					</script>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 text-center">
-                    <div class="service-box">
-                        <canvas id="pp" height="130" width="130"></canvas>
-					<br>
-					<h3 class="sr-icons">PHP</h3>
-					<br>
-					<script>
-						var doughnutData = [
-								{
-									value: 85,
-									color:"#f85c37"
-								},
-								{
-									value : 15,
-									color : "#ecf0f1"
-								}
-							];
-							var myDoughnut = new Chart(document.getElementById("pp").getContext("2d")).Doughnut(doughnutData);
-					</script>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 text-center">
-                    <div class="service-box">
-                       <canvas id="bootstrap2" height="130" width="130"></canvas>
-					<br>
-					<h3 class="sr-icons">Bootstrap</h3>
-					<br>
-					<script>
-						var doughnutData = [
-								{
-									value: 80,
-									color:"#f85c37"
-								},
-								{
-									value : 20,
-									color : "#ecf0f1"
-								}
-							];
-							var myDoughnut = new Chart(document.getElementById("bootstrap2").getContext("2d")).Doughnut(doughnutData);
-					</script>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 text-center">
-                    <div class="service-box">
-                        <canvas id="wordpress" height="130" width="130"></canvas>
-					<br>
-					<h3 class="sr-icons">Mysql</h3>
-					<br>
-					<script>
-						var doughnutData = [
-								{
-									value: 85,
-									color:"#f85c37"
-								},
-								{
-									value : 15,
-									color : "#ecf0f1"
-								}
-							];
-							var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
-					</script>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 text-center">
-                    <div class="service-box">
-                        <canvas id="word" height="130" width="130"></canvas>
-					<br>
-					<h3 class="sr-icons">Javascript</h3>
-					<br>
-					<script>
-						var doughnutData = [
-								{
-									value: 60,
-									color:"#f85c37"
-								},
-								{
-									value : 40,
-									color : "#ecf0f1"
-								}
-							];
-							var myDoughnut = new Chart(document.getElementById("word").getContext("2d")).Doughnut(doughnutData);
-					</script>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="no-padding" id="portfolio">
+        </section>
+<section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
@@ -338,6 +181,57 @@
             </div>
         </div>
     </section>
+     <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">About me</h2>
+                    <hr class="light">
+                    <p class="sr-icons"><img src="https://geneparagas.github.io/img/IMG_6398.png" width="160" height="153"></p>
+                  <p class="text-faded">Gene is a full time Web Developer and have been working in the industry for more than 2 years. I got my first job as a Developer and IT Specialist for a trade event’s organizer way back from January of 2014. My assignments most of the time is to create Microsites for events/conferences. Informative websites and online registration pages, I was also tasked in the development of email marketing materials. Aside from being a developer I was also part in technical support, basic troubleshooting and Network-Server Administration. Now as a Web Developer for an outsource company. Essentially, I develop and manage web content material for clients in United States, UK</p>
+                
+                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+        
+        <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading"><br>My Skills</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 text-left">
+                    <progress value="90" max="100"></progress><span class="skills">HTML5 & CSS3</span>
+					<progress value="85" max="100"></progress><span class="skills">PHP</span>
+					<progress value="60" max="100"></progress><span class="skills">JavaScript</span>
+                    <progress value="85" max="100"></progress><span class="skills">Bootstrap</span>
+                    <progress value="70" max="100"></progress><span class="skills">CodeIgniter</span>
+                </div>
+                <div class="col-lg-4 col-md-6 text-left">
+                    <progress value="80" max="100"></progress><span class="skills">Photoshop</span>
+					<progress value="90" max="100"></progress><span class="skills">Salesforce & ExactTarget</span>
+					<progress value="100" max="100"></progress><span class="skills">Oracle Eloqua</span>
+                    <progress value="85" max="100"></progress><span class="skills">WordPress & APS.NET</span>
+                    <progress value="90" max="100"></progress><span class="skills">Citrix Receiver & Episerver</span>
+                </div>
+                <div class="col-lg-4 col-md-6 text-left">
+                    <progress value="85" max="100"></progress><span class="skills">MySQL</span>
+					<progress value="100" max="100"></progress><span class="skills">Team Work</span>
+					<progress value="100" max="100"></progress><span class="skills">Creative</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </aside>
     <section id="contact">
         <div class="container">
             <div class="row">
