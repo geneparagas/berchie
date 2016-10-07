@@ -896,3 +896,19 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
     background-color: #F05F40;
 }
+.pie-chart svg {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  vertical-align: middle;
+}
+
+.pie-chart:after {
+  content: attr(data-percent) "%";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  line-height: 174px;
+  font-size: 3.125em;
+  font-weight: 300;
+  text-align: center;
+}
