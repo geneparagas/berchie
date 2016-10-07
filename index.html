@@ -19,6 +19,32 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <script src="js/Chart.js"></script>
+    <style>
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(img/loader-64x/Preloader_3.gif) center no-repeat #fff;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+	//paste this code under head tag or in a seperate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
@@ -34,7 +60,7 @@
 </head>
 
 <body id="page-top">
-
+<div class="se-pre-con"></div>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -301,13 +327,12 @@
                     <p class="text-left">For more info kindly click <strong><a href="http://www.gesi.com.ph/index.html" target="_blank">View the website</a></strong></p>
             </div>
             </div>
+                
             <div class="row">
-                <div class="col-lg-12 text-center">
+            <div class="col-lg-12 text-center">
                     <h3>Skills</h3>
                     <hr class="primary">
                 </div>
-            </div>
-            <div class="row">
         <div class="col-md-3 col-sm-6">
           <div class="pie-chart" data-percent="90">
             <svg width="174px" height="174px">
@@ -315,7 +340,7 @@
               <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="452.452835083" fill="none" />
             </svg>
           </div>
-          <h3>Web Design</h3>
+          <h3>HTML5 / CSS3</h3>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="pie-chart" data-percent="95">
@@ -324,7 +349,7 @@
               <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="377.044029236" fill="none" />
             </svg>
           </div>
-          <h3>HTML5 / CSS3 / PHP</h3>
+          <h3>PHP / MySQL</h3>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="pie-chart" data-percent="70">
@@ -333,7 +358,7 @@
               <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531"  stroke-dashoffset="351.90776062" fill="none" />
             </svg>
           </div>
-          <h3>JavaScript/jQuery</h3>
+          <h3>JavaScript / jQuery</h3>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="pie-chart" data-percent="85">
@@ -342,7 +367,7 @@
               <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="427.316566467" fill="none" />
             </svg>
           </div>
-          <h3>MySQL</h3>
+          <h3>Web Design</h3>
         </div>
         </div>
                         </div>
@@ -377,19 +402,58 @@
 
             <div class="col-md-6 text-left">
                 <img class="img-responsive" src="img/portfolio/thumbnails/2.jpg" alt="">
-                <h3>Project Description</h3>
-                <p class="text-left">Accuity protects reputations with comprehensive data and software to control risk and compliance, and flexible tools to optimise payments processes.</p>
+                
             </div>
 
             <div class="col-md-6 text-left">
-                <h3>Skills</h3>
-					<progress value="100" max="100"></progress><span class="skills">Eloqua</span>
-					<progress value="70" max="100"></progress><span class="skills">HTML5/CSS3</span>
-					<progress value="60" max="100"></progress><span class="skills">JavaScript</span>
-					<progress value="80" max="100"></progress><span class="skills">Photoshop</span>
+               <h3>Project Description</h3>
+                <p class="text-left">Accuity protects reputations with comprehensive data and software to control risk and compliance, and flexible tools to optimise payments processes.</p>
                     <p class="text-left">For more info kindly click <strong><a href="https://accuity.com/" target="_blank">View the website</a></strong></p>
             </div>
 
+        </div>
+                
+            <div class="row">
+            <div class="col-lg-12 text-center">
+                    <h3>Skills</h3>
+                    <hr class="primary">
+                </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="100">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#30bae7" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="452.452835083" fill="none" />
+            </svg>
+          </div>
+          <h3>Oracle Eloqua</h3>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="70">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#d74680" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="377.044029236" fill="none" />
+            </svg>
+          </div>
+          <h3>HTML5 / CSS3</h3>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="60">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#15c7a8" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531"  stroke-dashoffset="351.90776062" fill="none" />
+            </svg>
+          </div>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="80">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#eb7d4b" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="427.316566467" fill="none" />
+            </svg>
+          </div>
+          <h3>Photoshop</h3>
+        </div>
         </div>
                         </div>
                     </div>
@@ -423,20 +487,57 @@
 
             <div class="col-md-6 text-left">
                 <img class="img-responsive" src="img/portfolio/thumbnails/3.jpg" alt="">
-                <h3>Project Description</h3>
-                <p class="text-left">An industry pioneer, Global-Link is an events organizing and management company that has been in operations since the early 1990s. We have a comprehensive service line, an average of 25 annual trade event titles in our portfolio, and have won the coveted award for Best in Exhibition Management from Pico Global two years in a row. In 2015, the Pico Far East Board of Directors recognized the company as a top performer in the global group of organizers and was given the Award for Excellence.</p>
+                
             </div>
 
             <div class="col-md-6 text-left">
-                <h3>Skills</h3>
-					<progress value="100" max="100"></progress><span class="skills">WordPress</span>
-					<progress value="70" max="100"></progress><span class="skills">HTML5/CSS3</span>
-					<progress value="80" max="100"></progress><span class="skills">PHP</span>
-                    <progress value="60" max="100"></progress><span class="skills">MySQL</span>
-					<progress value="80" max="100"></progress><span class="skills">Photoshop</span>
+<h3>Project Description</h3>
+                <p class="text-left">An industry pioneer, Global-Link is an events organizing and management company that has been in operations since the early 1990s. We have a comprehensive service line, an average of 25 annual trade event titles in our portfolio, and have won the coveted award for Best in Exhibition Management from Pico Global two years in a row. In 2015, the Pico Far East Board of Directors recognized the company as a top performer in the global group of organizers and was given the Award for Excellence.</p>
                     <p class="text-left">For more info kindly click <strong><a href="http://www.globallinkmp.com/" target="_blank">View the website</a></strong></p>
             </div>
 
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                    <h3>Skills</h3>
+                    <hr class="primary">
+                </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="100">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#30bae7" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="452.452835083" fill="none" />
+            </svg>
+          </div>
+          <h3>WordPress</h3>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="70">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#d74680" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="377.044029236" fill="none" />
+            </svg>
+          </div>
+          <h3>HTML5 / CSS3</h3>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="90">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#15c7a8" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531"  stroke-dashoffset="351.90776062" fill="none" />
+            </svg>
+          </div>
+          <h3>PHP / MySQL</h3>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="80">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#eb7d4b" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="427.316566467" fill="none" />
+            </svg>
+          </div>
+          <h3>Web Design</h3>
+        </div>
         </div>
                         </div>
                     </div>
@@ -471,19 +572,56 @@
 
             <div class="col-md-6 text-left">
                 <img class="img-responsive" src="img/portfolio/thumbnails/4.jpg" alt="">
-                <h3>Project Description</h3>
-                <p class="text-left">A digital edition is an online magazine or online newspaper delivered in electronic form which is formatted identically to the print version. Digital editions are often called digital facsimiles to underline the likeness to the print version. Digital editions have the benefit of reduced cost to the publisher and reader by avoiding the time and expense to print and deliver like a paper edition</p>
             </div>
 
             <div class="col-md-6 text-left">
-                <h3>Skills</h3>
-					<progress value="70" max="100"></progress><span class="skills">HTML5/CSS3</span>
-					<progress value="80" max="100"></progress><span class="skills">JavaScript</span>
-                    <progress value="60" max="100"></progress><span class="skills">Jquery</span>
-					<progress value="80" max="100"></progress><span class="skills">Photoshop</span>
+            <h3>Project Description</h3>
+                <p class="text-left">A digital edition is an online magazine or online newspaper delivered in electronic form which is formatted identically to the print version. Digital editions are often called digital facsimiles to underline the likeness to the print version. Digital editions have the benefit of reduced cost to the publisher and reader by avoiding the time and expense to print and deliver like a paper edition</p>
                     <p class="text-left">For more info kindly click <strong><a href="http://business-class.com.ph/BCmagazine/" target="_blank">View the website</a></strong></p>
             </div>
 
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                    <h3>Skills</h3>
+                    <hr class="primary">
+                </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="90">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#30bae7" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="452.452835083" fill="none" />
+            </svg>
+          </div>
+          <h3>HTML5 / CSS3</h3>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="70">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#d74680" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="377.044029236" fill="none" />
+            </svg>
+          </div>
+          <h3>JavaScript / Jquery</h3>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="85">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#15c7a8" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531"  stroke-dashoffset="351.90776062" fill="none" />
+            </svg>
+          </div>
+          <h3>Bootstrap</h3>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="95">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#eb7d4b" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="427.316566467" fill="none" />
+            </svg>
+          </div>
+          <h3>Web Design</h3>
+        </div>
         </div>
                         </div>
                     </div>
@@ -516,18 +654,56 @@
 
             <div class="col-md-6 text-left">
                 <img class="img-responsive" src="img/portfolio/thumbnails/5.jpg" alt="">
-                <h3>Project Description</h3>
-                <p class="text-left">Email marketing is directly sending a commercial message, typically to a group of people, using email. In its broadest sense, every email sent to a potential or current customer could be considered email marketing.</p>
             </div>
 
             <div class="col-md-6 text-left">
-                <h3>Skills</h3>
-					<progress value="100" max="100"></progress><span class="skills">HTML5/CSS3</span>
-					<progress value="100" max="100"></progress><span class="skills">Responsive</span>
-					<progress value="80" max="100"></progress><span class="skills">Photoshop</span>
+            <h3>Project Description</h3>
+                <p class="text-left">Email marketing is directly sending a commercial message, typically to a group of people, using email. In its broadest sense, every email sent to a potential or current customer could be considered email marketing.</p>
                     <p class="text-left">For Sample projects <br><strong><a href="http://view.e.accuity.com/?qs=05b1e9195bc2e77f79eb2d7281a309f8d82ca0a43416fad24bfedae977d7fd448a73a3b547029a566ae352d69f6a76e853bd202d20ad85b4217aa3ebb1ded5b9025204e836d6d86c&cmpid=EMP|BAML|BACNW-2016-0612-EMEA-amleuem" target="_blank">Email Newsletter</a></strong><br><strong><a href="http://s1535.t.en25.com/e/es.aspx?s=1535&e=40677&elqTrackId=cfee6b732e1d47a88300fcdd8de48157&elq=5ce8a910e63f472a881d0730c40392fc&elqaid=799&elqat=1" target="_blank">Email Campaign</a></strong><br><strong><a href="http://s1535.t.en25.com/e/es.aspx?s=1535&e=38727&elqTrackId=a262d14f835a42979f25307a5fa10bc7&elq=cc337ce20d7840fc83af6216188c03af&elqaid=738&elqat=1" target="_blank">Different Languages EDM version</a></strong></p>
             </div>
 
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                    <h3>Skills</h3>
+                    <hr class="primary">
+                </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="100">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#30bae7" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="452.452835083" fill="none" />
+            </svg>
+          </div>
+          <h3>HTML5 / CSS3</h3>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="100">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#d74680" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="377.044029236" fill="none" />
+            </svg>
+          </div>
+          <h3>Mobile Version</h3>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="100">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#15c7a8" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531"  stroke-dashoffset="351.90776062" fill="none" />
+            </svg>
+          </div>
+          <h3>HTML Best Practices</h3>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="100">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#eb7d4b" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="427.316566467" fill="none" />
+            </svg>
+          </div>
+          <h3>Email Clients</h3>
+        </div>
         </div>
                         </div>
                     </div>
@@ -561,22 +737,59 @@
 
             <div class="col-md-6 text-left">
                 <img class="img-responsive" src="img/portfolio/thumbnails/6.jpg" alt="">
-                <h3>Project Description</h3>
-                <p class="text-left">Creating a responsive online registration that allow the client save the data and for the person to visit or to register an events or purchace a product</p>
+                
             </div>
 
             <div class="col-md-6 text-left">
-                <h3>Skills</h3>
-					<progress value="70" max="100"></progress><span class="skills">HTML5/CSS3</span>
-                    <progress value="90" max="100"></progress><span class="skills">PHP</span>
-					<progress value="80" max="100"></progress><span class="skills">JavaScript</span>
-                    <progress value="60" max="100"></progress><span class="skills">Jquery</span>
-                    <progress value="80" max="100"></progress><span class="skills">MySQL</span>
-					<progress value="80" max="100"></progress><span class="skills">Photoshop</span>
+            <h3>Project Description</h3>
+                <p class="text-left">Creating a responsive online registration that allow the client save the data and for the person to visit or to register an events or purchace a product</p>
                     <p class="text-left">For more info kindly click <strong><a href="http://forms.accuity.com/LP=95" target="_blank">View the Online Registration</a></strong></p>
             </div>
 
         </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                    <h3>Skills</h3>
+                    <hr class="primary">
+                </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="70">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#30bae7" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="452.452835083" fill="none" />
+            </svg>
+          </div>
+          <h3>HTML5 / CSS3</h3>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="80">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#d74680" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="377.044029236" fill="none" />
+            </svg>
+          </div>
+          <h3>JavaScript / Jquery</h3>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="90">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#15c7a8" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531"  stroke-dashoffset="351.90776062" fill="none" />
+            </svg>
+          </div>
+          <h3>PHP / MySQL</h3>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="pie-chart" data-percent="70">
+            <svg width="174px" height="174px">
+              <circle fill="none" cx="87" cy="87" r="80" stroke="#eb7d4b" stroke-width="12" />
+              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="427.316566467" fill="none" />
+            </svg>
+          </div>
+          <h3>Web Design</h3>
+        </div>
+        </div>
+        
                         </div>
                     </div>
                 
