@@ -30,34 +30,11 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-<script>
-    jQuery(window).load(function(){
-    jQuery('#overlay').fadeOut();
-    });
-</script>
-<style>
-    #overlay {
-        background: #ffffff;
-        color: #666666;
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        z-index: 5000;
-        top: 0;
-        left: 0;
-        float: left;
-        text-align: center;
-        padding-top: 20%;
-    }
-</style>
 </head>
 
 <body id="page-top">
-<div id="overlay">
-    <img src="img/loader-128x/Preloader_3.gif" width="128" height="128" alt="Loading" />
-</div>
+
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -71,14 +48,14 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                <li>
+                    <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                    <li>
+                        <a class="page-scroll" href="#services">Services & Skills</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Projects</a>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -93,18 +70,19 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <font style="font-size:60px;"><div id="typed-strings">
-    <p>Hello. <em>Nice to meet you</em></p>
-    <p>My name is <font style="font-size:70px; font-weight:bold">Gene</font></p>
+                <font style="font-size:40px;"><div id="typed-strings">
+    <p>Oh <em>Hello</em> there</p>
+    <p>Welcome to my <font style="text-decoration:underline">Portfolio</font> :)</p>
+    <p>My name is <font style="font-size:60px; font-weight:bold">Gene</font></p>
 </div>
 <span id="typed"></span></font>
                 <hr>
-                
-                <h4 class="text-faded">I'm a creative web developer, making the web more enjoyable by creating attractive websites for business and individuals who need an effective online presence, for more info kindly click below</h4>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Lets Get Started</a>
+                <p>I'm a creative web developer, making the web more enjoyable by creating attractive websites for business and individuals who need an effective online presence,<br>for more info kindly click below</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Download my Resume</a>
             </div>
         </div>
     </header>
+
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
@@ -112,23 +90,21 @@
                     <h2 class="section-heading">About me</h2>
                     <hr class="light">
                     <p class="sr-icons"><img src="https://geneparagas.github.io/img/IMG_6398.png" width="160" height="153"></p>
-                  <p class="text-faded">I'm a full time Web Developer with related work experience of almost 3 years. I have handled a variety of clients with each unique projects and I’m able and willing to propagate more.<br><br>
-Being an IT Specialist for one of the top organizers in conferences and trade events in the Philippines was one of my basic training in cultivating my people skills and developing my technical side. 
-For almost 2 years, I was assigned in development of microsites (informative web pages), online registration pages, and e-mail marketing materials for specific events and conferences. Furthermore, I was also part of a technical team for technical support, basic troubleshooting and Network-Server Administration. 
- 
-Next part was working with a certified outsource company which serviced clients both locally and international that need providers in online creative and digital services. As a Developer I was able to create and manage web content materials with specifications of clients in the United States, United Kingdom and Singapore.</p>
+                  <p class="text-faded">Gene is a full time Web Developer and have been working in the industry for more than 2 years. I got my first job as a Developer and IT Specialist for a trade event’s organizer way back from January of 2014. My assignments most of the time is to create Microsites for events/conferences. Informative websites and online registration pages, I was also tasked in the development of email marketing materials. Aside from being a developer I was also part in technical support, basic troubleshooting and Network-Server Administration. Now as a Web Developer for an outsource company. Essentially, I develop and manage web content material for clients in United States, UK</p>
                 
-                    <a href="https://geneparagas.github.io/gene_paragas.pdf" class="page-scroll btn btn-default btn-xl sr-button" target="_blank" >Download my Resume</a>
+                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
                 </div>
             </div>
             
         </div>
     </section>
+
     <section id="services">
         <div class="container">
             <div class="row">
+
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading"><br>What I do</h2>
+                    <h2 class="section-heading"><br>At Your Service</h2>
                     <hr class="primary">
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -161,134 +137,222 @@ Next part was working with a certified outsource company which serviced clients 
                 </div>
             </div>
         </div>
-        </section>
-<section class="no-padding" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Projects</h2>
+                    <h2 class="section-heading"><br>My Skills</h2>
                     <hr class="primary">
                 </div>
             </div>
+        </div>
+        <div class="container">
             <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
+                <div class="col-lg-2 col-md-6 text-center">
+                    <div class="service-box">
+                        <canvas id="javascript" height="130" width="130"></canvas>
+					<br>
+					<h3 class="sr-icons">HTML 5</h3>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 90,
+									color:"#f85c37"
+								},
+								{
+									value : 10,
+									color : "#ecf0f1"
+								}
+							];
+							
+							var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+					</script>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 text-center">
+                    <div class="service-box">
+                        <canvas id="bootstrap" height="130" width="130"></canvas>
+					<br>
+					<h3 class="sr-icons">CSS 3</h3>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 90,
+									color:"#f85c37"
+								},
+								{
+									value : 10,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+					</script>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 text-center">
+                    <div class="service-box">
+                        <canvas id="pp" height="130" width="130"></canvas>
+					<br>
+					<h3 class="sr-icons">PHP</h3>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 85,
+									color:"#f85c37"
+								},
+								{
+									value : 15,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("pp").getContext("2d")).Doughnut(doughnutData);
+					</script>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 text-center">
+                    <div class="service-box">
+                       <canvas id="bootstrap2" height="130" width="130"></canvas>
+					<br>
+					<h3 class="sr-icons">Bootstrap</h3>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 80,
+									color:"#f85c37"
+								},
+								{
+									value : 20,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("bootstrap2").getContext("2d")).Doughnut(doughnutData);
+					</script>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 text-center">
+                    <div class="service-box">
+                        <canvas id="wordpress" height="130" width="130"></canvas>
+					<br>
+					<h3 class="sr-icons">Mysql</h3>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 85,
+									color:"#f85c37"
+								},
+								{
+									value : 15,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+					</script>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 text-center">
+                    <div class="service-box">
+                        <canvas id="word" height="130" width="130"></canvas>
+					<br>
+					<h3 class="sr-icons">Javascript</h3>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 60,
+									color:"#f85c37"
+								},
+								{
+									value : 40,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("word").getContext("2d")).Doughnut(doughnutData);
+					</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal1" class="portfolio-box" data-toggle="modal">
                         <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content"><i class="fa fa-search-plus fa-3x"></i>
+                                
                             </div>
                         </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal2" class="portfolio-box" data-toggle="modal">
                         <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content"><i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal3" class="portfolio-box" data-toggle="modal">
                         <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content"><i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal4" class="portfolio-box" data-toggle="modal">
                         <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content"><i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal5" class="portfolio-box" data-toggle="modal">
                         <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content"><i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal6" class="portfolio-box" data-toggle="modal">
                         <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content"><i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-     <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading"><br>Skills & Proficiency</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 text-left">
-                    <progress value="90" max="100"></progress><span class="skills">HTML5 & CSS3</span>
-					<progress value="85" max="100"></progress><span class="skills">PHP</span>
-					<progress value="60" max="100"></progress><span class="skills">JavaScript</span>
-                    <progress value="85" max="100"></progress><span class="skills">Bootstrap</span>
-                    <progress value="50" max="100"></progress><span class="skills">CodeIgniter</span>
-                </div>
-                <div class="col-lg-4 col-md-6 text-left">
-                    <progress value="85" max="100"></progress><span class="skills">MySQL</span>
-					<progress value="90" max="100"></progress><span class="skills">Salesforce & ExactTarget</span>
-					<progress value="70" max="100"></progress><span class="skills">Oracle Eloqua</span>
-                    <progress value="85" max="100"></progress><span class="skills">WordPress & APS.NET</span>
-                    <progress value="90" max="100"></progress><span class="skills">Citrix Receiver & Episerver</span>
-                </div>
-                <div class="col-lg-4 col-md-6 text-left">
-                    <progress value="90" max="100"></progress><span class="skills">Photoshop</span>
-					<progress value="70" max="100"></progress><span class="skills">Illustrator</span>
-					<progress value="80" max="100"></progress><span class="skills">After Effects</span>
-                    <progress value="60" max="100"></progress><span class="skills">Vegas Pro</span>
-                </div>
-            </div>
-        </div>
-        </div>
-    </aside>
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="primary">
-                    <p>With my hands-on experience efficiently coding web sites and applications using modern HTML, CSS, and JavaScript, I am confident I will be an excellent addition to your organization.</p>
+                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center">
+                <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
                     <p>123-456-6789</p>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <i class="fa fa-skype fa-3x sr-contact"></i>
-                    <p>gene.paragas04</p>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center">
+                <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:gene.paragas0408@gmail.com" target="_blank">gene.paragas0408@gmail.com</a></p>
+                    <p><a href="gene.paragas0408@gmail.com">gene.paragas0408@gmail.com</a></p>
                 </div>
             </div>
         </div>
@@ -303,77 +367,55 @@ Next part was working with a certified outsource company which serviced clients 
                 </div>
             </div>
             <div class="container">
-                <div class="container">
-                    <div class="col-lg-12">
-<!-- Portfolio Item Heading -->
-        <div class="container">
-            <div class="col-lg-12">
-                <h1 class="page-header text-left">Gesi.com.ph
-                    <small>Web Develompent and Design</small>
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Gesicom Website</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive img-centered" alt="" style="margin:0px auto">
+                            <p>As an industry pioneer in organizing trade shows and conferences, our primary aim is to create a venue for businesses to meet their target buyers. The solutions we offer are diverse enough to be dynamic and yet focused to meet the specific needs of our clients.</p>
 
-        <!-- Portfolio Item Row -->
-        <div class="container">
-
-            <div class="col-md-6 text-left">
-                <img class="img-responsive" src="img/portfolio/thumbnails/1.jpg" alt="">
-            </div>
-
-            <div class="col-md-6 text-left">
-                <h3>Project Description</h3>
-                <p class="text-left">As an industry pioneer in organizing trade shows and conferences, our primary aim is to create a venue for businesses to meet their target buyers. The solutions we offer are diverse enough to be dynamic and yet focused to meet the specific needs of our clients.</p>
-                    <p class="text-left">For more info kindly click <strong><a href="http://www.gesi.com.ph/index.html" target="_blank">View the website</a></strong></p>
-            </div>
-            </div>
+                <div class="col-lg-12 text-center" style=" padding-bottom:30px; padding-top:30px">
                 
-            <div class="row">
-            <div class="col-lg-12 text-center">
-                    <h3>Skills</h3>
-                    <hr class="primary">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/HTML5.png" width="100" height="100" class="sr-icons" alt="">
+                    </div>
                 </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="90">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#30bae7" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="452.452835083" fill="none" />
-            </svg>
-          </div>
-          <h3>HTML5 / CSS3</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="95">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#d74680" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="377.044029236" fill="none" />
-            </svg>
-          </div>
-          <h3>PHP / MySQL</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="70">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#15c7a8" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531"  stroke-dashoffset="351.90776062" fill="none" />
-            </svg>
-          </div>
-          <h3>JavaScript / jQuery</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="85">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#eb7d4b" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="427.316566467" fill="none" />
-            </svg>
-          </div>
-          <h3>Web Design</h3>
-        </div>
-        </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/CSS.png" width="100" height="100" class="sr-icons" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                       <img src="img/JavaScript.png" width="100" height="100" class="sr-icons" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/mysql.png" width="100" height="100" class="sr-icons" alt="">
+                    </div>
+                </div>
+                </div>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://www.gesi.com.ph/index.html">www.gesi.com.ph</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://www.gesi.com.ph/index.html">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://www.gesi.com.ph/index.html">Web Development and Design</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
-                
+                </div>
             </div>
         </div>
     </div>
@@ -386,79 +428,34 @@ Next part was working with a certified outsource company which serviced clients 
                 </div>
             </div>
             <div class="container">
-                <div class="container">
-                    <div class="col-lg-12">
-<!-- Portfolio Item Heading -->
-        <div class="container">
-            <div class="col-lg-12">
-                <h1 class="page-header text-left">Accuity
-                    <small>Web Development Updates</small>
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Portfolio Item Row -->
-        <div class="container">
-
-            <div class="col-md-6 text-left">
-                <img class="img-responsive" src="img/portfolio/thumbnails/2.jpg" alt="">
-                
-            </div>
-
-            <div class="col-md-6 text-left">
-               <h3>Project Description</h3>
-                <p class="text-left">Accuity protects reputations with comprehensive data and software to control risk and compliance, and flexible tools to optimise payments processes.</p>
-                    <p class="text-left">For more info kindly click <strong><a href="https://accuity.com/" target="_blank">View the website</a></strong></p>
-            </div>
-
-        </div>
-                
-            <div class="row">
-            <div class="col-lg-12 text-center">
-                    <h3>Skills</h3>
-                    <hr class="primary">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Accuity</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive img-centered" alt="" style="margin:0px auto">
+                            <p>Accuity protects reputations with comprehensive data and software to control risk and compliance, and flexible tools to optimise payments processes.</p>
+                            <div class="col-lg-12 text-center" style=" padding-bottom:30px; padding-top:30px">
+                        <img src="img/eloqua.png" width="100" height="100" class="sr-icons" alt="">
                 </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="100">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#30bae7" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="452.452835083" fill="none" />
-            </svg>
-          </div>
-          <h3>Oracle Eloqua</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="70">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#d74680" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="377.044029236" fill="none" />
-            </svg>
-          </div>
-          <h3>HTML5 / CSS3</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="60">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#15c7a8" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531"  stroke-dashoffset="351.90776062" fill="none" />
-            </svg>
-          </div>
-          <h3>JavaScript</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="80">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#eb7d4b" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="427.316566467" fill="none" />
-            </svg>
-          </div>
-          <h3>Photoshop</h3>
-        </div>
-        </div>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="https://accuity.com/">accuity.com/</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="https://accuity.com/">March 2016</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="https://accuity.com/">Web Development Updates</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
-                
+                </div>
             </div>
         </div>
     </div>
@@ -471,80 +468,35 @@ Next part was working with a certified outsource company which serviced clients 
                 </div>
             </div>
             <div class="container">
-                <div class="container">
-                    <div class="col-lg-12">
-<!-- Portfolio Item Heading -->
-        <div class="container">
-            <div class="col-lg-12">
-                <h1 class="page-header text-left">Globallink MP Events International
-                    <small>Web Development</small>
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Portfolio Item Row -->
-        <div class="container">
-
-            <div class="col-md-6 text-left">
-                <img class="img-responsive" src="img/portfolio/thumbnails/3.jpg" alt="">
-                
-            </div>
-
-            <div class="col-md-6 text-left">
-<h3>Project Description</h3>
-                <p class="text-left">An industry pioneer, Global-Link is an events organizing and management company that has been in operations since the early 1990s. We have a comprehensive service line, an average of 25 annual trade event titles in our portfolio, and have won the coveted award for Best in Exhibition Management from Pico Global two years in a row. In 2015, the Pico Far East Board of Directors recognized the company as a top performer in the global group of organizers and was given the Award for Excellence.</p>
-                    <p class="text-left">For more info kindly click <strong><a href="http://www.globallinkmp.com/" target="_blank">View the website</a></strong></p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                    <h3>Skills</h3>
-                    <hr class="primary">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Globallink MP Events International</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive img-centered" alt="" style="margin:0px auto">
+                            <p>An industry pioneer, Global-Link is an events organizing and management company that has been in operations since the early 1990s. We have a comprehensive service line, an average of 25 annual trade event titles in our portfolio, and have won the coveted award for Best in Exhibition Management from Pico Global two years in a row. In 2015, the Pico Far East Board of Directors recognized the company as a top performer in the global group of organizers and was given the Award for Excellence.</p>
+                              <div class="col-lg-12 text-center" style=" padding-bottom:30px; padding-top:30px">
+                        <img src="img/wordpress.png" width="100" height="100" class="sr-icons" alt="">
                 </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="100">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#30bae7" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="452.452835083" fill="none" />
-            </svg>
-          </div>
-          <h3>WordPress</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="70">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#d74680" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="377.044029236" fill="none" />
-            </svg>
-          </div>
-          <h3>HTML5 / CSS3</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="90">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#15c7a8" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531"  stroke-dashoffset="351.90776062" fill="none" />
-            </svg>
-          </div>
-          <h3>PHP / MySQL</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="80">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#eb7d4b" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="427.316566467" fill="none" />
-            </svg>
-          </div>
-          <h3>Web Design</h3>
-        </div>
-        </div>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://www.globallinkmp.com/">globallinkmp</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://www.globallinkmp.com/">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://www.globallinkmp.com/">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
-                
+                </div>
             </div>
-            
         </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
@@ -556,77 +508,54 @@ Next part was working with a certified outsource company which serviced clients 
                 </div>
             </div>
             <div class="container">
-                <div class="container">
-                    <div class="col-lg-12">
-<!-- Portfolio Item Heading -->
-        <div class="container">
-            <div class="col-lg-12">
-                <h1 class="page-header text-left">Digital Magazine
-                    <small>Web Development, Design, Animation Effects</small>
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Portfolio Item Row -->
-        <div class="container">
-
-            <div class="col-md-6 text-left">
-                <img class="img-responsive" src="img/portfolio/thumbnails/4.jpg" alt="">
-            </div>
-
-            <div class="col-md-6 text-left">
-            <h3>Project Description</h3>
-                <p class="text-left">A digital edition is an online magazine or online newspaper delivered in electronic form which is formatted identically to the print version. Digital editions are often called digital facsimiles to underline the likeness to the print version. Digital editions have the benefit of reduced cost to the publisher and reader by avoiding the time and expense to print and deliver like a paper edition</p>
-                    <p class="text-left">For more info kindly click <strong><a href="http://business-class.com.ph/BCmagazine/" target="_blank">View the website</a></strong></p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                    <h3>Skills</h3>
-                    <hr class="primary">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Digital Magazine</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive img-centered" alt="" style="margin:0px auto">
+                            <p>A digital edition is an online magazine or online newspaper delivered in electronic form which is formatted identically to the print version. Digital editions are often called digital facsimiles to underline the likeness to the print version. Digital editions have the benefit of reduced cost to the publisher and reader by avoiding the time and expense to print and deliver like a paper edition</p>
+                            <div class="col-lg-12 text-center" style=" padding-bottom:30px; padding-top:30px">
+                
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/HTML5.png" width="100" height="100" class="sr-icons" alt="">
+                    </div>
                 </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="90">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#30bae7" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="452.452835083" fill="none" />
-            </svg>
-          </div>
-          <h3>HTML5 / CSS3</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="70">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#d74680" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="377.044029236" fill="none" />
-            </svg>
-          </div>
-          <h3>JavaScript / Jquery</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="85">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#15c7a8" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531"  stroke-dashoffset="351.90776062" fill="none" />
-            </svg>
-          </div>
-          <h3>Bootstrap</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="95">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#eb7d4b" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="427.316566467" fill="none" />
-            </svg>
-          </div>
-          <h3>Web Design</h3>
-        </div>
-        </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/CSS.png" width="100" height="100" class="sr-icons" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                       <img src="img/JavaScript.png" width="100" height="100" class="sr-icons" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/jquery.png" width="100" height="100" class="sr-icons" alt="">
+                    </div>
+                </div>
+                </div>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://business-class.com.ph/BCmagazine/">business-class.com.ph</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://business-class.com.ph/BCmagazine/">January 2015</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://business-class.com.ph/BCmagazine/">Web Development and Design</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
-                
+                </div>
             </div>
         </div>
     </div>
@@ -639,76 +568,44 @@ Next part was working with a certified outsource company which serviced clients 
                 </div>
             </div>
             <div class="container">
-                <div class="container">
-                    <div class="col-lg-12">
-<!-- Portfolio Item Heading -->
-        <div class="container">
-            <div class="col-lg-12">
-                <h1 class="page-header text-left">Responsive Newsletters
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Portfolio Item Row -->
-        <div class="container">
-
-            <div class="col-md-6 text-left">
-                <img class="img-responsive" src="img/portfolio/thumbnails/5.jpg" alt="">
-            </div>
-
-            <div class="col-md-6 text-left">
-            <h3>Project Description</h3>
-                <p class="text-left">Email marketing is directly sending a commercial message, typically to a group of people, using email. In its broadest sense, every email sent to a potential or current customer could be considered email marketing.</p>
-                    <p class="text-left">For Sample projects <br><strong><a href="http://view.e.accuity.com/?qs=05b1e9195bc2e77f79eb2d7281a309f8d82ca0a43416fad24bfedae977d7fd448a73a3b547029a566ae352d69f6a76e853bd202d20ad85b4217aa3ebb1ded5b9025204e836d6d86c&cmpid=EMP|BAML|BACNW-2016-0612-EMEA-amleuem" target="_blank">Email Newsletter</a></strong><br><strong><a href="http://s1535.t.en25.com/e/es.aspx?s=1535&e=40677&elqTrackId=cfee6b732e1d47a88300fcdd8de48157&elq=5ce8a910e63f472a881d0730c40392fc&elqaid=799&elqat=1" target="_blank">Email Campaign</a></strong><br><strong><a href="http://s1535.t.en25.com/e/es.aspx?s=1535&e=38727&elqTrackId=a262d14f835a42979f25307a5fa10bc7&elq=cc337ce20d7840fc83af6216188c03af&elqaid=738&elqat=1" target="_blank">Different Languages EDM version</a></strong></p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                    <h3>Skills</h3>
-                    <hr class="primary">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Responsive Newsletters</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive img-centered" alt="" style="margin:0px auto">
+                            <p>Email marketing is directly sending a commercial message, typically to a group of people, using email. In its broadest sense, every email sent to a potential or current customer could be considered email marketing. It usually involves using email to send ads, request business, or solicit sales or donations, and is meant to build loyalty, trust, or brand awareness. Email marketing can be done to either sold lists or a current customer database. Broadly, the term is usually used to refer to sending email messages with the purpose of enhancing the relationship of a merchant with its current or previous customers, to encourage customer loyalty and repeat business, acquiring new customers or convincing current customers to purchase something immediately, and adding advertisements to email messages sent by other companies to their customers.</p>
+                            <div class="col-lg-12 text-center" style=" padding-bottom:30px; padding-top:30px">
+                
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/HTML5.png" width="100" height="100" class="sr-icons" alt="">
+                    </div>
                 </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="100">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#30bae7" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="452.452835083" fill="none" />
-            </svg>
-          </div>
-          <h3>HTML5 / CSS3</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="100">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#d74680" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="377.044029236" fill="none" />
-            </svg>
-          </div>
-          <h3>Mobile Version</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="100">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#15c7a8" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531"  stroke-dashoffset="351.90776062" fill="none" />
-            </svg>
-          </div>
-          <h3>HTML Best Practices</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="100">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#eb7d4b" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="427.316566467" fill="none" />
-            </svg>
-          </div>
-          <h3>Email Clients</h3>
-        </div>
-        </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/CSS.png" width="100" height="100" class="sr-icons" alt="">
+                    </div>
+                </div>
+                </div>
+                            <ul class="list-inline item-details">
+                                <li>Email Newsletter
+                                    <strong><a href="http://view.e.accuity.com/?qs=05b1e9195bc2e77f79eb2d7281a309f8d82ca0a43416fad24bfedae977d7fd448a73a3b547029a566ae352d69f6a76e853bd202d20ad85b4217aa3ebb1ded5b9025204e836d6d86c&cmpid=EMP|BAML|BACNW-2016-0612-EMEA-amleuem">Click here</a>
+                                    </strong>
+                                </li>
+                                <li>Email Campaign
+                                    <strong><a href="http://s1535.t.en25.com/e/es.aspx?s=1535&e=40677&elqTrackId=cfee6b732e1d47a88300fcdd8de48157&elq=5ce8a910e63f472a881d0730c40392fc&elqaid=799&elqat=1">Click here</a>
+                                    </strong>
+                                </li>
+                                <li>Different Languages EDM version
+                                    <strong><a href="http://s1535.t.en25.com/e/es.aspx?s=1535&e=38727&elqTrackId=a262d14f835a42979f25307a5fa10bc7&elq=cc337ce20d7840fc83af6216188c03af&elqaid=738&elqat=1">Click here</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
-                
+                </div>
             </div>
         </div>
     </div>
@@ -721,79 +618,50 @@ Next part was working with a certified outsource company which serviced clients 
                 </div>
             </div>
             <div class="container">
-                <div class="container">
-                    <div class="col-lg-12">
-<!-- Portfolio Item Heading -->
-        <div class="container">
-            <div class="col-lg-12">
-                <h1 class="page-header text-left">Online Registrations
-                    <small>Web Development, Design and Database</small>
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Portfolio Item Row -->
-        <div class="container">
-
-            <div class="col-md-6 text-left">
-                <img class="img-responsive" src="img/portfolio/thumbnails/6.jpg" alt="">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Online Registrations with Database</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive img-centered" alt="" style="margin:0px auto">
+                            <p>Creating a responsive online registration that allow the client save the data and for the person to visit or to register an events or purchace a product</p>
+                            <div class="col-lg-12 text-center" style=" padding-bottom:30px; padding-top:30px">
                 
-            </div>
-
-            <div class="col-md-6 text-left">
-            <h3>Project Description</h3>
-                <p class="text-left">Creating a responsive online registration that allow the client save the data and for the person to visit or to register an events or purchace a product</p>
-                    <p class="text-left">For more info kindly click <strong><a href="http://forms.accuity.com/LP=95" target="_blank">View the Online Registration</a></strong></p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                    <h3>Skills</h3>
-                    <hr class="primary">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/HTML5.png" width="100" height="100" class="sr-icons" alt="">
+                    </div>
                 </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="70">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#30bae7" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="452.452835083" fill="none" />
-            </svg>
-          </div>
-          <h3>HTML5 / CSS3</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="80">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#d74680" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="377.044029236" fill="none" />
-            </svg>
-          </div>
-          <h3>JavaScript / Jquery</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="90">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#15c7a8" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531"  stroke-dashoffset="351.90776062" fill="none" />
-            </svg>
-          </div>
-          <h3>PHP / MySQL</h3>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="pie-chart" data-percent="70">
-            <svg width="174px" height="174px">
-              <circle fill="none" cx="87" cy="87" r="80" stroke="#eb7d4b" stroke-width="12" />
-              <path d="M7,87 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" stroke="#e5e5e5" stroke-width="13" stroke-dasharray="502.7253723144531" stroke-dashoffset="427.316566467" fill="none" />
-            </svg>
-          </div>
-          <h3>Web Design</h3>
-        </div>
-        </div>
-        
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/CSS.png" width="100" height="100" class="sr-icons" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                       <img src="img/JavaScript.png" width="100" height="100" class="sr-icons" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/mysql.png" width="100" height="100" class="sr-icons" alt="">
+                    </div>
+                </div>
+                </div>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://forms.accuity.com/LP=95">Accuity Japanese version</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://forms.accuity.com/LP=95">Web Development and Database</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
-                
+                </div>
             </div>
         </div>
     </div>
@@ -804,7 +672,7 @@ Next part was working with a certified outsource company which serviced clients 
     $(function(){
         $("#typed").typed({
             stringsElement: $('#typed-strings'),
-			typeSpeed: 40,
+			typeSpeed: 30,
             backDelay: 500,
             loop: false,
             contentType: 'html', // or text
@@ -823,14 +691,6 @@ Next part was working with a certified outsource company which serviced clients 
 
     function foo(){ console.log("Callback"); }
 </script>
-<script>
-   $(function() {
-  $('progress').each(function() {
-    var max = $(this).val();
-    $(this).val(0).animate({ value: max }, { duration: 4500, easing: 'easeOutCirc' });
-			});
-});
-</script>
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
@@ -841,8 +701,7 @@ Next part was working with a certified outsource company which serviced clients 
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
-  <script src="js/jquery.inview.js"></script>
-  <script src="js/main.js"></script>
+
 </body>
 
 </html>
