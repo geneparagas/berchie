@@ -422,6 +422,7 @@ section.first {
 }
 .portfolio-modal .close-modal {
 	position: absolute;
+	width: 75px;
 	height: 75px;
 	background-color: transparent;
 	top: 25px;
