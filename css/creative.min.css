@@ -146,55 +146,21 @@ header {
 	color: #fff
 }
 .parallax {
-    position: relative;
-    background: #ffffff;
-    overflow: hidden;
-}
-.parallax:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.2; 
-    background-image: url(../img/header.jpg);
+	min-height: auto;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
+	background-image: url(../img/header2.jpg);
 }
 .parallax2 {
-    position: relative;
-    background: #000000;
-    overflow: hidden;
-    color: #fff
-}
-.parallax2:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.1; 
-    background-image: url(../img/header.jpg);
+	min-height: auto;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
+	background-image: url(../img/header3.jpg);
+	color: #fff
 }
 header .header-content {
 	padding: 100px 15px
